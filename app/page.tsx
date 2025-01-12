@@ -1,15 +1,8 @@
 import Image from "next/image";
-import { Poppins } from 'next/font/google';
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
-});
 
 export default function Home() {
   return (
-    <div className={`min-h-screen bg-amber-50 relative overflow-hidden ${poppins.variable} font-sans`}>
+    <div className="min-h-screen bg-amber-50 relative overflow-hidden">
       {/* Circular Grid Background */}
       <div className="absolute inset-0 opacity-[0.03]" 
         style={{ 
