@@ -19,3 +19,68 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes blob {
+  0%, 100% { 
+    transform: translate(0, 0) scale(1) rotate(0deg); 
+  }
+  25% { 
+    transform: translate(20px, 30px) scale(1.1) rotate(5deg); 
+  }
+  50% { 
+    transform: translate(-15px, 10px) scale(0.9) rotate(-5deg); 
+  }
+  75% { 
+    transform: translate(15px, -20px) scale(1.05) rotate(3deg); 
+  }
+}
+
+@keyframes blob2 {
+  0%, 100% { 
+    transform: translate(0, 0) scale(1) rotate(0deg); 
+  }
+  25% { 
+    transform: translate(-20px, -15px) scale(0.9) rotate(-5deg); 
+  }
+  50% { 
+    transform: translate(15px, 20px) scale(1.1) rotate(5deg); 
+  }
+  75% { 
+    transform: translate(-15px, 10px) scale(0.95) rotate(-3deg); 
+  }
+}
+
+@keyframes blob3 {
+  0%, 100% { 
+    transform: translate(0, 0) scale(1) rotate(0deg); 
+  }
+  25% { 
+    transform: translate(15px, -20px) scale(1.05) rotate(3deg); 
+  }
+  50% { 
+    transform: translate(-20px, -10px) scale(0.95) rotate(-5deg); 
+  }
+  75% { 
+    transform: translate(10px, 15px) scale(1.1) rotate(5deg); 
+  }
+}
+
+.animate-blob {
+  animation: blob 20s ease-in-out infinite;
+}
+
+.animate-blob2 {
+  animation: blob2 25s ease-in-out infinite;
+}
+
+.animate-blob3 {
+  animation: blob3 30s ease-in-out infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
